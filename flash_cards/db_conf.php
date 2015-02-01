@@ -4,18 +4,18 @@
 //   Loading Database Config.
 // *****************************************
 
-// $my_db_host = $_ENV['DB_CARDS_HOST'];
-// $my_db_user = $_ENV['DB_CARDS_USER'];
-// $my_db_password = $_ENV['DB_CARDS_PASSWORD'];
-// $my_db_database = $_ENV['DB_CARDS_DATABASE'];
-// $my_db_access_key = $_ENV['DB_CARDS_ACCESS_KEY'];  // used by the application
+$my_db_host = $_ENV['DB_CARDS_HOST'];
+$my_db_user = $_ENV['DB_CARDS_USER'];
+$my_db_password = $_ENV['DB_CARDS_PASSWORD'];
+$my_db_database = $_ENV['DB_CARDS_DATABASE'];
+$my_db_access_key = $_ENV['DB_CARDS_ACCESS_KEY'];  // used by the application
 
-require_once('db_cards_conf_demo.php');
-$my_db_host = $db_cards['host'];
-$my_db_user = $db_cards['user'];
-$my_db_password = $db_cards['password'];
-$my_db_database = $db_cards['database'];
-$my_db_access_key = $db_cards['access_key'];  // used by the application
+// require_once('db_cards_conf_demo.php');
+// $my_db_host = $db_cards['host'];
+// $my_db_user = $db_cards['user'];
+// $my_db_password = $db_cards['password'];
+// $my_db_database = $db_cards['database'];
+// $my_db_access_key = $db_cards['access_key'];  // used by the application
 
 
 // *****************************************
