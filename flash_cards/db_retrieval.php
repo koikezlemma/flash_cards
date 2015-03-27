@@ -142,6 +142,8 @@ $query = 'SELECT w.id, c.category_id, c.category_name, w.draft, w.reg_date, s.le
 
 if ($stmt = $mysqli->prepare($query)) {
 
+    $init_level = get_init_level($key, $mysqli);
+
     $result = $stmt->bind_param('siiiss', $user_name, $front_to_back, $start_category, $end_category, $start_date, $end_date);
     if ($result == false){
         die("Error BIND" . $mysqli->error . "\n");
@@ -173,7 +175,7 @@ if ($stmt = $mysqli->prepare($query)) {
             }
             $my_item['accuracy_rate'] = number_format ( $accuracy_rate , 1 );
         } else {
-            $my_item['level'] = get_init_level($key, $mysqli);
+            $my_item['level'] = $init_level;
             $my_item['status_ng'] = 0;
             $my_item['num_ok'] = 0;
             $my_item['num_even'] = 0;
