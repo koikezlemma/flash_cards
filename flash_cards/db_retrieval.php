@@ -30,12 +30,12 @@ if (isset($_POST['key'])) {
 if (isset($_POST['start_category'])) {
     $start_category = intval($_POST['start_category']);
 } else {
-    $start_category = '0';
+    $start_category = 0;
 }
 if (isset($_POST['end_category'])) {
     $end_category = intval($_POST['end_category']);
 } else {
-    $end_category = '1000';
+    $end_category = 65536;
 }
 
 if (isset($_POST['start_date'])) {

@@ -44,7 +44,7 @@ if (isset($_GET['start_category'])) {
 if (isset($_GET['end_category'])) {
     $end_category = intval($_GET['end_category']);
 } else {
-    $end_category = PHP_INT_MAX;
+    $end_category = 65536;
 }
 
 if (isset($_GET['start_date'])) {
